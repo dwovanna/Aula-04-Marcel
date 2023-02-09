@@ -53,8 +53,12 @@ entradaDados.question('Valor: \n', function(numero1){
             //toLowerCase - converte uma string em minusculo
 
             resultado = matematica.calculadora(valor1, Valor2, operacao);
+            if(resultado == false && typeof(resultado) == 'boolean')
+            entradaDados.close();
+
+            else
+            
             console.log(resultado);
-           
 
         
         }
